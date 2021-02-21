@@ -51,23 +51,25 @@ if (special) {
 console.log(userPasswordChoice)
 
 }
-console.log("This is the users password" + userPasswordChoice)
+
 var newPassword = ""
 // for loop for password choice
 for (var i = 0; i < passLength; i++) {
   var char = Math.floor(Math.random() * userPasswordChoice)
   newPassword += userPasswordChoice[char];
+  
 }
 console.log(newPassword)
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordText = document.querySelector('#password');
 
-  passwordText.Value = password;
+  passwordText.value = password;
   passwordText.textContent = newPassword;
 
-}
 
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
