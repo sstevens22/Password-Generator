@@ -30,3 +30,6 @@ GIVEN I need a new, secure password
 
 # Links
 
+https://sstevens22.github.io/Password-Generator/
+
+https://github.com/sstevens22/Password-Generator
